@@ -20,6 +20,7 @@ NeuralForge AI is a full-stack AI-powered creative platform that brings six AI t
 
 - **Live App:** https://neuralforge-ai-web.vercel.app
 - **Backend API:** https://neuralforge-ai-saas.onrender.com
+- **Repository:** https://github.com/ashoksamota0/NeuralForge-AI-SaaS
 
 ## ✨ Key Features
 
