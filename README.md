@@ -21,8 +21,10 @@ VoxMeet is a full-stack real-time video conferencing platform — create and joi
 
 ## ✨ Key Features
 
+> 👉 **Each category below is expandable — click on one to see its full feature list.**
+
 <details>
-<summary><strong>🎥 Real-Time Meetings</strong></summary>
+<summary><strong>🎥 Real-Time Meetings</strong> &nbsp;<img alt="expand" src="https://img.shields.io/badge/-Click%20to%20expand-2f81f7?style=flat-square"></summary>
 
 - Real-time video and audio meetings using WebRTC
 - Peer-to-peer media communication with WebRTC
@@ -35,7 +37,7 @@ VoxMeet is a full-stack real-time video conferencing platform — create and joi
 </details>
 
 <details>
-<summary><strong>🎤 Audio & Video Controls</strong></summary>
+<summary><strong>🎤 Audio & Video Controls</strong> &nbsp;<img alt="expand" src="https://img.shields.io/badge/-Click%20to%20expand-2f81f7?style=flat-square"></summary>
 
 - Microphone controls with mute/unmute functionality
 - Camera controls with video on/off functionality
@@ -46,7 +48,7 @@ VoxMeet is a full-stack real-time video conferencing platform — create and joi
 </details>
 
 <details>
-<summary><strong>🖥️ Screen Sharing</strong></summary>
+<summary><strong>🖥️ Screen Sharing</strong> &nbsp;<img alt="expand" src="https://img.shields.io/badge/-Click%20to%20expand-2f81f7?style=flat-square"></summary>
 
 - Browser-based screen sharing using the Screen Capture API
 - Camera-to-screen track switching during screen sharing
@@ -57,7 +59,7 @@ VoxMeet is a full-stack real-time video conferencing platform — create and joi
 </details>
 
 <details>
-<summary><strong>💬 Real-Time Communication</strong></summary>
+<summary><strong>💬 Real-Time Communication</strong> &nbsp;<img alt="expand" src="https://img.shields.io/badge/-Click%20to%20expand-2f81f7?style=flat-square"></summary>
 
 - Real-time meeting chat using Socket.io
 - Unread message count when the chat panel is closed
@@ -68,7 +70,7 @@ VoxMeet is a full-stack real-time video conferencing platform — create and joi
 </details>
 
 <details>
-<summary><strong>📋 Meeting Management</strong></summary>
+<summary><strong>📋 Meeting Management</strong> &nbsp;<img alt="expand" src="https://img.shields.io/badge/-Click%20to%20expand-2f81f7?style=flat-square"></summary>
 
 - Persistent meeting history
 - Participant records stored in PostgreSQL
@@ -81,7 +83,7 @@ VoxMeet is a full-stack real-time video conferencing platform — create and joi
 </details>
 
 <details>
-<summary><strong>🔐 Authentication & User Management</strong></summary>
+<summary><strong>🔐 Authentication & User Management</strong> &nbsp;<img alt="expand" src="https://img.shields.io/badge/-Click%20to%20expand-2f81f7?style=flat-square"></summary>
 
 - Secure authentication with Clerk
 - Protected API routes using authentication middleware
@@ -92,7 +94,7 @@ VoxMeet is a full-stack real-time video conferencing platform — create and joi
 </details>
 
 <details>
-<summary><strong>💳 Plans & Payments</strong></summary>
+<summary><strong>💳 Plans & Payments</strong> &nbsp;<img alt="expand" src="https://img.shields.io/badge/-Click%20to%20expand-2f81f7?style=flat-square"></summary>
 
 - Free plan with 150 meetings per month and up to 10 participants
 - Premium plan with unlimited meetings and up to 100 participants
@@ -103,7 +105,7 @@ VoxMeet is a full-stack real-time video conferencing platform — create and joi
 </details>
 
 <details>
-<summary><strong>📱 UI & User Experience</strong></summary>
+<summary><strong>📱 UI & User Experience</strong> &nbsp;<img alt="expand" src="https://img.shields.io/badge/-Click%20to%20expand-2f81f7?style=flat-square"></summary>
 
 - Responsive interface for desktop, tablet, and mobile
 - Custom VoxMeet branding and UI
@@ -116,7 +118,7 @@ VoxMeet is a full-stack real-time video conferencing platform — create and joi
 </details>
 
 <details>
-<summary><strong>🗄️ Backend & Data</strong></summary>
+<summary><strong>🗄️ Backend & Data</strong> &nbsp;<img alt="expand" src="https://img.shields.io/badge/-Click%20to%20expand-2f81f7?style=flat-square"></summary>
 
 - PostgreSQL database for persistent application data
 - Relational data model with foreign-key relationships
