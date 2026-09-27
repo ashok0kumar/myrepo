@@ -24,8 +24,8 @@ NeuralForge AI is a full-stack AI-powered creative platform that brings six AI t
 
 ### 🤖 AI-Powered Tools
 
-| Tool | What it does | Access | Powered by |
-|---|---|---|---|
+| Tool | What it does | Powered by |
+|---|---|---|
 | 📝 AI Article Writer | Generates complete articles from a topic/prompt | Google Gemini |
 | #️⃣ Blog Title Generator | Generates creative blog title ideas | Google Gemini |
 | 🎨 AI Image Generator | Creates images from text prompts | AI Image API + Cloudinary |
