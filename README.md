@@ -21,7 +21,7 @@ VoxMeet is a full-stack real-time video conferencing platform — create and joi
 
 ## ✨ Key Features
 
-👉 *Click any category below to expand its full feature list.*
+> 👉 **Each category below is expandable — click on one to see its full feature list.**
 
 <details>
 <summary><strong>🎥 Real-Time Meetings</strong> &nbsp;<kbd>View details</kbd></summary>
