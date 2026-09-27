@@ -26,12 +26,12 @@ NeuralForge AI is a full-stack AI-powered creative platform that brings six AI t
 
 | Tool | What it does | Access | Powered by |
 |---|---|---|---|
-| 📝 AI Article Writer | Generates complete articles from a topic/prompt | Free (limited) + Premium | Google Gemini |
-| #️⃣ Blog Title Generator | Generates creative blog title ideas | Premium only | Google Gemini |
-| 🎨 AI Image Generator | Creates images from text prompts | Free (limited) + Premium | AI Image API + Cloudinary |
-| 🖼️ Background Removal | Removes the background from an uploaded image | Free (limited) + Premium | ClipDrop + Cloudinary |
-| ✂️ Object Removal | Removes unwanted objects from an image | Free (limited) + Premium | ClipDrop + Cloudinary |
-| 📄 Resume Reviewer | Analyzes a resume and gives improvement suggestions | Free (limited) + Premium | Google Gemini |
+| 📝 AI Article Writer | Generates complete articles from a topic/prompt | Google Gemini |
+| #️⃣ Blog Title Generator | Generates creative blog title ideas | Google Gemini |
+| 🎨 AI Image Generator | Creates images from text prompts | AI Image API + Cloudinary |
+| 🖼️ Background Removal | Removes the background from an uploaded image | ClipDrop + Cloudinary |
+| ✂️ Object Removal | Removes unwanted objects from an image | ClipDrop + Cloudinary |
+| 📄 Resume Reviewer | Analyzes a resume and gives improvement suggestions | Google Gemini |
 
 ### 💎 Free & Premium Plans
 
