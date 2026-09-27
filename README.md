@@ -28,9 +28,9 @@ NeuralForge AI is a full-stack AI-powered creative platform that brings six AI t
 |---|---|---|
 | 📝 AI Article Writer | Generates complete articles from a topic/prompt | Google Gemini |
 | #️⃣ Blog Title Generator | Generates creative blog title ideas | Google Gemini |
-| 🎨 AI Image Generator | Creates images from text prompts | AI Image API + Cloudinary |
-| 🖼️ Background Removal | Removes the background from an uploaded image | ClipDrop + Cloudinary |
-| ✂️ Object Removal | Removes unwanted objects from an image | ClipDrop + Cloudinary |
+| 🎨 AI Image Generator | Creates images from text prompts | ClipDrop + Cloudinary |
+| 🖼️ Background Removal | Removes the background from an uploaded image | Cloudinary AI |
+| ✂️ Object Removal | Removes unwanted objects from an image | Cloudinary Generative AI |
 | 📄 Resume Reviewer | Analyzes a resume and gives improvement suggestions | Google Gemini |
 
 ### 💎 Free & Premium Plans
@@ -136,7 +136,7 @@ git clone https://github.com/ashoksamota0/NeuralForge-AI-SaaS.git
 cd NeuralForge-AI-SaaS
 ```
 
-### 2. Backend setup
+### 2. Start the backend server (do this first)
 ```bash
 cd server
 npm install
@@ -152,14 +152,16 @@ CLOUDINARY_API_KEY=your_cloudinary_api_key
 CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 CLIPDROP_API_KEY=your_clipdrop_api_key
 ```
-Run it:
+Start it:
 ```bash
 npm start
 ```
+> **Keep this terminal running** — the frontend needs the backend API to be live.
 
-### 3. Frontend setup
+### 3. Start the frontend (in a new terminal)
+From the project root:
 ```bash
-cd ../client
+cd client
 npm install
 ```
 Create a `.env` file in `client/`:
@@ -167,7 +169,7 @@ Create a `.env` file in `client/`:
 VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
 VITE_API_URL=your_backend_url
 ```
-Run it:
+Start it:
 ```bash
 npm run dev
 ```
