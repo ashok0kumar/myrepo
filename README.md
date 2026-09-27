@@ -49,7 +49,7 @@ NeuralForge AI is a full-stack AI-powered creative platform that brings six AI t
 
 ### 🔍 More Under the Hood
 
-👉 *Click any category below to expand its full feature list.*
+> 👉 **Each category below is expandable — click on one to see its full feature list.**
 
 <details>
 <summary><strong>🔐 Authentication & Access Control</strong> &nbsp;<kbd>View details</kbd></summary>
