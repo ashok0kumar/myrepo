@@ -1,6 +1,6 @@
-# VoxMeet 🎥
+# NeuralForge AI 🤖
 
-**Real-Time Video Calling Platform**
+**Full-Stack AI SaaS Platform**
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
@@ -9,147 +9,115 @@
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
 ![Express](https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
-![Socket.io](https://img.shields.io/badge/Socket.io-010101?style=flat&logo=socket.io&logoColor=white)
-![WebRTC](https://img.shields.io/badge/WebRTC-333333?style=flat)
 ![Clerk](https://img.shields.io/badge/Clerk-6C47FF?style=flat&logo=clerk&logoColor=white)
-![Razorpay](https://img.shields.io/badge/Razorpay-0C2451?style=flat&logo=razorpay&logoColor=white)
+![Google Gemini](https://img.shields.io/badge/Google_Gemini-886FBF?style=flat&logo=googlegemini&logoColor=white)
+![Cloudinary](https://img.shields.io/badge/Cloudinary-3448C5?style=flat&logo=cloudinary&logoColor=white)
 
-VoxMeet is a full-stack real-time video conferencing platform — create and join meetings with live video/audio, screen sharing, real-time chat, participant management, and persistent meeting history.
+NeuralForge AI is a full-stack AI-powered creative platform that brings six AI tools — article writing, blog titles, image generation, background/object removal, and resume review — together behind secure authentication, a Free/Premium SaaS model, and a community feed for sharing AI-generated content.
 
 ## 🚀 Live Demo
 
-- **App:** https://voxmeet-video.vercel.app
-- **Backend API:** https://voxmeet-j3xe.onrender.com
-
-> Backend runs on Render's free tier, so the first request after inactivity can take a few seconds while the server wakes up.
+- **Live App:** https://neuralforge-ai-web.vercel.app
+- **Repository:** https://github.com/ashoksamota0/NeuralForge-AI-SaaS
 
 ## ✨ Key Features
 
-> 👉 **Each category below is expandable — click on one to see its full feature list.**
+### 🤖 AI-Powered Tools
+
+| Tool | What it does | Access | Powered by |
+|---|---|---|---|
+| 📝 AI Article Writer | Generates complete articles from a topic/prompt | Free (limited) + Premium | Google Gemini |
+| #️⃣ Blog Title Generator | Generates creative blog title ideas | Premium only | Google Gemini |
+| 🎨 AI Image Generator | Creates images from text prompts | Free (limited) + Premium | AI Image API + Cloudinary |
+| 🖼️ Background Removal | Removes the background from an uploaded image | Free (limited) + Premium | ClipDrop + Cloudinary |
+| ✂️ Object Removal | Removes unwanted objects from an image | Free (limited) + Premium | ClipDrop + Cloudinary |
+| 📄 Resume Reviewer | Analyzes a resume and gives improvement suggestions | Free (limited) + Premium | Google Gemini |
+
+### 💎 Free & Premium Plans
+
+| Feature | Free | Premium |
+|---|---|---|
+| AI Article Writer | Limited | Unlimited |
+| Blog Title Generator | — | Unlimited |
+| AI Image Generation | Limited | Unlimited |
+| Background Removal | Limited | Unlimited |
+| Object Removal | Limited | Unlimited |
+| Resume Reviewer | Limited | Unlimited |
+| Community Access | ✓ | ✓ |
+
+### 🔍 More Under the Hood
+
+👉 *Click any category below to expand its full feature list.*
 
 <details>
-<summary><strong>🎥 Real-Time Meetings</strong> &nbsp;<kbd>View details</kbd></summary>
+<summary><strong>🔐 Authentication & Access Control</strong> &nbsp;<kbd>View details</kbd></summary>
 
-- Real-time video and audio meetings using WebRTC
-- Peer-to-peer media communication with WebRTC
-- Dynamic participant management for users joining and leaving meetings
-- Unique meeting ID generation with duplicate checking and database-level uniqueness
-- Shared meeting duration timer based on the meeting's actual creation time
-- Connection quality indicator showing Good, Fair, or Poor connection status
-- Network connectivity detection using browser online/offline status and WebRTC connection states
+- User registration and login handled by Clerk
+- Secure session management
+- Protected application routes and API endpoints
+- Authentication middleware guards every protected API
+- Authenticated user's identity and plan available on the backend
+- Server-side Premium validation — the backend checks the user's subscription plan before allowing premium operations, so frontend restrictions can't be bypassed
 
 </details>
 
 <details>
-<summary><strong>🎤 Audio & Video Controls</strong> &nbsp;<kbd>View details</kbd></summary>
+<summary><strong>👥 Community</strong> &nbsp;<kbd>View details</kbd></summary>
 
-- Microphone controls with mute/unmute functionality
-- Camera controls with video on/off functionality
-- Browser permission handling for camera and microphone
-- Device availability detection when a microphone or camera is unavailable
-- Visual device status indicators when camera/microphone access is unavailable or permission is denied
-
-</details>
-
-<details>
-<summary><strong>🖥️ Screen Sharing</strong> &nbsp;<kbd>View details</kbd></summary>
-
-- Browser-based screen sharing using the Screen Capture API
-- Camera-to-screen track switching during screen sharing
-- Microphone audio continues while sharing the screen
-- Screen sharing visible to remote participants
-- Automatic screen-share handling when the browser stops screen sharing
+- Publish AI-generated content to a shared community feed
+- View and interact with other users' published content
+- PostgreSQL-backed community data
+- Authenticated, user-associated community interactions
 
 </details>
 
 <details>
-<summary><strong>💬 Real-Time Communication</strong> &nbsp;<kbd>View details</kbd></summary>
+<summary><strong>🎨 UI & User Experience</strong> &nbsp;<kbd>View details</kbd></summary>
 
-- Real-time meeting chat using Socket.io
-- Unread message count when the chat panel is closed
-- Participant list with participant information and media status
-- Real-time meeting events for joining, leaving, audio/video changes, and screen sharing
-- Socket.io-based WebRTC signaling for offer, answer, and ICE candidate exchange
-
-</details>
-
-<details>
-<summary><strong>📋 Meeting Management</strong> &nbsp;<kbd>View details</kbd></summary>
-
-- Persistent meeting history
-- Participant records stored in PostgreSQL
-- Meeting chat messages persisted in PostgreSQL
-- Meeting status management including active and ended meetings
-- End meeting for all participants functionality
-- Leave meeting functionality
-- Protected meeting routes for authenticated users
+- Modern responsive landing page — hero section, AI tool showcase, testimonials, pricing, CTAs
+- Responsive navigation with a mobile menu
+- Dedicated About, Contact, Privacy Policy, and FAQ pages
+- FAQ uses an interactive accordion interface
+- Pricing page with Free/Premium comparison and upgrade flow
+- Premium-feature indicators throughout the UI
+- Toast notifications and loading states for async actions (AI generation, image processing, etc.)
+- Responsive layouts for desktop, tablet, and mobile
 
 </details>
 
 <details>
-<summary><strong>🔐 Authentication & User Management</strong> &nbsp;<kbd>View details</kbd></summary>
+<summary><strong>🗄️ Backend, Database & Security</strong> &nbsp;<kbd>View details</kbd></summary>
 
-- Secure authentication with Clerk
-- Protected API routes using authentication middleware
-- Clerk webhook integration to synchronize users with PostgreSQL
-- Application-specific user data stored in PostgreSQL
-- Authenticated meeting and user operations
-
-</details>
-
-<details>
-<summary><strong>💳 Plans & Payments</strong> &nbsp;<kbd>View details</kbd></summary>
-
-- Free plan with 150 meetings per month and up to 10 participants
-- Premium plan with unlimited meetings and up to 100 participants
-- Razorpay integration for Premium upgrades
-- Server-side Razorpay payment signature verification
-- Plan-based meeting limits enforced by the backend
-
-</details>
-
-<details>
-<summary><strong>📱 UI & User Experience</strong> &nbsp;<kbd>View details</kbd></summary>
-
-- Responsive interface for desktop, tablet, and mobile
-- Custom VoxMeet branding and UI
-- Responsive navigation with mobile menu
-- Chat and participant side panels
-- FAQ and public information pages
-- Privacy Policy page
-- Loading states and user feedback notifications
-
-</details>
-
-<details>
-<summary><strong>🗄️ Backend & Data</strong> &nbsp;<kbd>View details</kbd></summary>
-
-- PostgreSQL database for persistent application data
-- Relational data model with foreign-key relationships
-- Separate storage for users, meetings, participants, and messages
-- Database constraints including unique meeting IDs and foreign keys
-- Neon PostgreSQL for cloud database hosting
+- React frontend talks to the Node.js/Express backend over REST APIs (Axios)
+- PostgreSQL (hosted on Neon) stores users, generated content, and community data
+- CORS configuration and environment-variable-based secrets
+- API keys for Gemini, ClipDrop, Cloudinary, and Clerk are kept backend-only, never exposed to the frontend
+- Clear separation between frontend and backend responsibilities
 
 </details>
 
 ## 🛠️ Tech Stack
 
-**Frontend:** React · Vite · Tailwind CSS · React Router · Axios · Socket.io Client · Clerk React · Lucide React
+**Frontend:** React · Vite · Tailwind CSS · React Router · Axios · Clerk React · Lucide React · React Hot Toast
 
-**Backend:** Node.js · Express.js · Socket.io · PostgreSQL (Neon) · Clerk Express · Razorpay
+**Backend:** Node.js · Express.js · Clerk Express · PostgreSQL · CORS · dotenv
 
-**Real-Time Communication:** WebRTC · Socket.io · MediaDevices API · Screen Capture API
+**AI & Cloud Services:** Google Gemini AI · ClipDrop API · Cloudinary
 
-**Deployment:** Vercel (frontend) · Render (backend) · Neon (database) · Clerk (auth) · Razorpay (payments)
+**Database:** PostgreSQL (Neon)
+
+**Deployment:** Vercel (frontend) · Render (backend) · Neon (database) · Cloudinary (media) · Clerk (auth)
 
 ## 🏗️ Architecture
 
 ```
 Browser (React + Vite)
    │
-   ├── REST API ─────────► Express Backend ────► PostgreSQL (Neon)
-   ├── Clerk Auth ───────► Express Backend
-   └── Socket.io ────────► Signaling ──► WebRTC Media (P2P) ──► Other Participants
+   ▼
+Express Backend ──► Clerk Auth
+   │
+   ├──► PostgreSQL (Neon)
+   └──► AI / Cloud APIs (Gemini · ClipDrop · Cloudinary)
 ```
 
 ## ⚙️ Getting Started
@@ -157,13 +125,15 @@ Browser (React + Vite)
 ### Prerequisites
 - Node.js & npm
 - A PostgreSQL database (e.g. [Neon](https://neon.tech))
-- A Clerk account (for auth keys)
-- A Razorpay account (for payment keys)
+- Clerk account (auth keys)
+- Google Gemini API key
+- Cloudinary account (cloud name, API key, API secret)
+- ClipDrop API key
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/ashoksamota0/VoxMeet.git
-cd VoxMeet
+git clone https://github.com/ashoksamota0/NeuralForge-AI-SaaS.git
+cd NeuralForge-AI-SaaS
 ```
 
 ### 2. Backend setup
@@ -173,14 +143,18 @@ npm install
 ```
 Create a `.env` file in `server/`:
 ```
-DATABASE_URL=your_postgres_connection_string
+PORT=3000
+DATABASE_URL=your_neon_postgresql_url
 CLERK_SECRET_KEY=your_clerk_secret_key
-RAZORPAY_KEY_ID=your_razorpay_key_id
-RAZORPAY_KEY_SECRET=your_razorpay_key_secret
+GEMINI_API_KEY=your_gemini_api_key
+CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
+CLOUDINARY_API_KEY=your_cloudinary_api_key
+CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+CLIPDROP_API_KEY=your_clipdrop_api_key
 ```
 Run it:
 ```bash
-npm run dev
+npm start
 ```
 
 ### 3. Frontend setup
@@ -191,7 +165,7 @@ npm install
 Create a `.env` file in `client/`:
 ```
 VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
-VITE_API_URL=http://localhost:5000
+VITE_API_URL=your_backend_url
 ```
 Run it:
 ```bash
@@ -200,35 +174,22 @@ npm run dev
 
 App will be live at `http://localhost:5173`.
 
-*(Match the `.env` keys and scripts above to whatever's actually in your `package.json` / config files if they differ.)*
-
-## 💳 Free & Premium Plans
-
-| Feature | Free | Premium |
-|---|---|---|
-| Price | ₹0 / forever | ₹499 (one-time) |
-| Meetings | 150 / month | Unlimited |
-| Participants | Up to 10 | Up to 100 |
-| Video & Audio | ✓ | ✓ |
-| Screen Sharing | ✓ | ✓ |
-| Real-time Chat | ✓ | ✓ |
-| Meeting History | ✓ | ✓ |
-
 ## 📁 Project Structure
 
 ```
-VoxMeet/
-├── client/          # React + Vite frontend
-│   └── src/
-│       ├── components/
-│       ├── hooks/
-│       ├── pages/
-│       └── config/
-└── server/          # Node.js + Express backend
-    ├── config/
+NeuralForge-AI-SaaS/
+├── client/
+│   ├── components/
+│   ├── pages/
+│   ├── assets/
+│   ├── App.jsx
+│   └── main.jsx
+└── server/
+    ├── configs/
     ├── controllers/
-    ├── middleware/
-    └── routes/
+    ├── middlewares/
+    ├── routes/
+    └── server.js
 ```
 
 ## 👤 Author
