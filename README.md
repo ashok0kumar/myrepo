@@ -38,6 +38,7 @@ NeuralForge AI is a full-stack AI-powered creative platform that brings six AI t
 
 | Feature | Free | Premium |
 |---|---|---|
+| Price | ₹0 / forever | ₹499 (one-time) |
 | AI Article Writer | Limited | Unlimited |
 | Blog Title Generator | — | Unlimited |
 | AI Image Generation | Limited | Unlimited |
