@@ -12,6 +12,7 @@
 ![Clerk](https://img.shields.io/badge/Clerk-6C47FF?style=flat&logo=clerk&logoColor=white)
 ![Google Gemini](https://img.shields.io/badge/Google_Gemini-886FBF?style=flat&logo=googlegemini&logoColor=white)
 ![Cloudinary](https://img.shields.io/badge/Cloudinary-3448C5?style=flat&logo=cloudinary&logoColor=white)
+[![Clipdrop](https://img.shields.io/badge/Clipdrop-000000?style=flat&logo=clipdrop&logoColor=white)](https://clipdrop.co/)
 
 NeuralForge AI is a full-stack AI-powered creative platform that brings six AI tools — article writing, blog titles, image generation, background/object removal, and resume review — together behind secure authentication, a Free/Premium SaaS model, and a community feed for sharing AI-generated content.
 
