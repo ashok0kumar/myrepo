@@ -1,140 +1,104 @@
-# TalentBridge 💼
+# Ashok Kumar — Developer Portfolio 🚀
 
-**Full-Stack Job Portal**
+**Full Stack Developer | SaaS Builder**
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
-![Clerk](https://img.shields.io/badge/Clerk-6C47FF?style=flat&logo=clerk&logoColor=white)
-![Cloudinary](https://img.shields.io/badge/Cloudinary-3448C5?style=flat&logo=cloudinary&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=flat&logo=framer&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white)
 
-TalentBridge is a full-stack recruitment platform that connects job seekers and recruiters through a streamlined hiring experience. Candidates can discover opportunities, apply for jobs, and track their applications, while recruiters manage job postings and review applicants from a centralized dashboard — with role-based, end-to-end workflows for both sides of the hiring process.
+A modern, responsive developer portfolio that showcases my projects, experience, education, skills, and resume — built with Next.js and deployed on Vercel.
 
-## 🚀 Live Demo
+## 🌐 Live Demo
 
-- **App:** https://talent-bridge-portal.vercel.app
-- **Repository:** https://github.com/ashoksamota0/TalentBridge
+- **Portfolio:** <https://ashok-portfolio-dev.vercel.app>
+- **Repository:** <https://github.com/ashoksamota0/Portfolio>
 
-> The backend is deployed on Render, so the first request after inactivity may take a few seconds while the server wakes up.
+## ✨ Features
 
-## ✨ Key Features
+- 🎨 Clean, modern dark-themed UI
+- 📱 Fully responsive across mobile, tablet, and desktop
+- 🎬 Smooth animations with Framer Motion
+- 💻 Project showcase with live demo and GitHub links
+- 💼 Experience and 🎓 Education sections
+- 📄 Built-in resume viewer
+- 📧 Contact section with GitHub, LinkedIn, and LeetCode links
+- 🔍 SEO metadata for better discoverability
+- ⚡ Fast, optimized performance on Vercel
 
-### 👤 Candidate Features
-- Secure authentication with Clerk
-- Browse and search job listings with filtering
-- Apply for jobs directly through the platform
-- Upload resumes and supporting documents (stored via Cloudinary)
-- Track real-time application status
+## 🚀 Featured Projects
 
-### 🧑‍💼 Recruiter Features
-- Dedicated recruiter dashboard
-- Create, edit, and manage job postings
-- View and review candidate applications and profiles
-- Manage the hiring workflow end-to-end
-- Company/media asset uploads via Cloudinary
+| Project | Description | Live | Code |
+| --- | --- | --- | --- |
+| **VoxMeet** | Real-time video calling platform (WebRTC, Socket.io) | [Demo](https://voxmeet-video.vercel.app) | [GitHub](https://github.com/ashoksamota0/VoxMeet) |
+| **NeuralForge AI** | AI SaaS with writing, image, and resume tools | [Demo](https://neuralforge-ai-web.vercel.app) | [GitHub](https://github.com/ashoksamota0/NeuralForge-AI-SaaS) |
+| **TalentBridge** | MERN job portal for candidates and recruiters | [Demo](https://talent-bridge-portal.vercel.app) | [GitHub](https://github.com/ashoksamota0/TalentBridge) |
 
 ## 🛠️ Tech Stack
 
-**Frontend:** React.js · Tailwind CSS
+**Framework:** Next.js (App Router) · React · TypeScript
 
-**Backend:** Node.js · Express.js
+**Styling & Animation:** Tailwind CSS · Framer Motion
 
-**Database:** MongoDB
+**Tooling:** ESLint · PostCSS
 
-**Authentication & Cloud Services:** Clerk · Cloudinary
-
-**Deployment:** Vercel (frontend) · Render (backend)
-
-## 🏗️ Architecture
-
-```
-Browser (React + Tailwind CSS)
-   │
-   ▼
-Express Backend ──► Clerk Auth (role-based: candidate / recruiter)
-   │
-   ├──► MongoDB (jobs, applications, users)
-   └──► Cloudinary (resumes & company assets)
-```
-
-- RESTful APIs covering job management, applications, status tracking, search, filtering, and pagination
-- Role-based access control — separate candidate and recruiter permissions
-- Secure authentication and authorization via Clerk
-- Cloud-based file storage for resumes and company assets via Cloudinary
+**Deployment:** Vercel
 
 ## ⚙️ Getting Started
 
 ### Prerequisites
-- Node.js & npm
-- A MongoDB database (e.g. [MongoDB Atlas](https://www.mongodb.com/atlas))
-- A Clerk account (for auth keys)
-- A Cloudinary account (for file storage keys)
 
-### 1. Clone the repo
-```bash
-git clone https://github.com/ashoksamota0/TalentBridge.git
-cd TalentBridge
-```
+- [Node.js](https://nodejs.org) 18 or later
+- npm (comes with Node.js)
 
-### 2. Start the backend server (do this first)
+### Run locally
+
 ```bash
-cd server
+# 1. Clone the repo
+git clone https://github.com/ashoksamota0/Portfolio.git
+cd Portfolio
+
+# 2. Install dependencies
 npm install
-```
-Create a `.env` file in `server/`:
-```
-PORT=5000
-MONGODB_URI=your_mongodb_connection_string
-CLERK_SECRET_KEY=your_clerk_secret_key
-CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
-CLOUDINARY_API_KEY=your_cloudinary_api_key
-CLOUDINARY_API_SECRET=your_cloudinary_api_secret
-```
-Start it:
-```bash
-npm start
-```
-> **Keep this terminal running** — the frontend needs the backend API to be live.
 
-### 3. Start the frontend (in a new terminal)
-From the project root:
-```bash
-cd client
-npm install
-```
-Create a `.env` file in `client/`:
-```
-VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
-VITE_API_URL=your_backend_url
-```
-Start it:
-```bash
+# 3. Start the dev server
 npm run dev
 ```
 
-App will be live at `http://localhost:5173`.
+Open <http://localhost:3000> in your browser.
 
-*(Match the `.env` keys above to whatever's actually in your `server`/`client` config if they differ.)*
+### Production build
+
+```bash
+npm run build
+npm run start
+```
 
 ## 📁 Project Structure
 
 ```
-TalentBridge/
-├── client/     # React + Tailwind CSS frontend
-└── server/     # Node.js + Express backend
+Portfolio/
+├── app/        # Pages, layouts, and components (Next.js App Router)
+├── public/     # Images, resume, and static assets
+├── next.config.mjs
+├── tailwind.config.ts
+└── package.json
 ```
+
+## 🌍 Deployment
+
+The site is deployed on [Vercel](https://vercel.com) and connected to this repository — every push to `main` triggers a new deployment.
 
 ## 👤 Author
 
-**Ashok Kumar** — Full-Stack Web Developer
+**Ashok Kumar** — Full Stack Developer, Bengaluru, India
 
 - GitHub: [@ashoksamota0](https://github.com/ashoksamota0)
 - LinkedIn: [ashok~kumar](https://www.linkedin.com/in/ashok~kumar/)
+- LeetCode: [ashok19samota](https://leetcode.com/u/ashok19samota/)
+- Email: ashok19samota@gmail.com
 
-## 📄 License
+---
 
-This project is intended for portfolio and educational purposes.
+<p align="center">Built with ❤️ by <strong>Ashok Kumar</strong></p>
